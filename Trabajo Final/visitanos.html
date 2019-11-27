@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VendoPiñatas.com</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="load()" onunload="GUnload()">
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.jpg" alt="Logotipo de Bienes Raices">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Diseños</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="visitanos.html">Visitanos</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+
+     <main class="contenedor">
+        <h1 class="fw-300 centrar-texto">Visitanos</h1>
+
+        <div class="contenido-visitanos">
+            </div>
+            
+
+            <main class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Conoce todas nuestras sucursales y visitanos</h2>
+
+       
+
+            
+                <div class="contenido-visitanos">
+                . <center>
+                    <h3>Visitanos en Merida Yucatan</h3>
+  </center>
+         
+         
+                    
+   <center>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyAYUG0h44g0YFpMso5d9p3w1zwN4beOI5w"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+
+    //<![CDATA[
+   
+    function load() {
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map"));
+        
+        map.addControl(new GMapTypeControl());
+        map.addControl(new GLargeMapControl());
+        map.addControl(new GScaleControl());
+        map.addControl(new GOverviewMapControl());
+        
+        map.setCenter(new GLatLng(20.965851, -89.625794), 18);
+      
+        map.setMapType(G_HYBRID_TYPE);
+            
+        function addtag(point, address) {
+        var marker = new GMarker(point);
+        GEvent.addListener(marker, "click", function() { marker.openInfoWindowHtml(address); } );
+        return marker;
+        }
+        
+        var point = new GLatLng(20.965851, -89.625794);
+        var address = '<b>MERIDA</b><br/><i>Centro de Meridar</i><br /><a href="http://https://github.com/Gen2000/Practica_Alo">Web del Centro de Merida</a>';
+        var marker = addtag(point, address);
+        
+        map.addOverlay(marker); 
+          
+      }
+    }
+
+    //]]>
+    </script>
+    <div id="map" align="center" style="width: 1000px; height: 500px"></div>
+   </center>
+   
+ 
+    <hr/>
+     <p><p/>
+    
+  </body>
+</html>
+<center>
+
+                    <section class="botonm">
+                    <ul>
+                     <li><a href="visitanos.html"><h5>Ver Mapa</h5></a> </li> </ul> </section>
+                </div>
+            </div>
+            </center>
+
+
+   
+                   
+
+           
+                
+                </div>
+            </div>
+ </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Diseños</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="visitanos.html">Visitanos</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados ALOANDROB 2019 &copy; </p>
+        </div>
+    </footer>
+</body>
+</html>
